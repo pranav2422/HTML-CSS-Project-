@@ -1,0 +1,120 @@
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0
+}
+
+:root{
+    --navbar_ht:340px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#logo{
+    margin: 6px 40px;
+}
+
+#logo img {
+    height: 55px;
+    margin: 1px 3px;
+    filter: invert(100%);
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 2.5;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-shadow: -3px -3px -3px rgb(10,10,10);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover{
+   color: rgb(146, 29, 29);
+   border-color: white;
+}
+
+/*__________________________________________________________________________________*/
+
+/* home section  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('background4.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.70;
+}
+
+#home p{
+    color: rgb(49, 1, 1);
+    text-align: center;
+    font-size: 1.2.rem;
+    /* text-shadow: 2px 2px 2px rgb(10,10,10); */
+    font-family: 'Bree Serif' , serif;
+}
+
+.h-primary{
+    color: rgba(19, 63, 80, 0.767);
+    font-size: 2.8rem;
+    padding: 12px;
+    text-shadow: 2px 2px 2px rgb(28,27,27);
+    font-family: 'changa' sans-serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+background-color: rgb(107,28,28);
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    transform: scale(0.9);
+}
